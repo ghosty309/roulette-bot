@@ -27,7 +27,7 @@ module.exports = {
         await interaction.reply(`Girando la ruleta...`)
 
         setInterval( async () => {
-            if (!randomAward === "Nada"){
+            if (randomAward !=== "Nada"){
                 await interaction.editReply(`Felicidades! Has ganado **${randomAward}**!\nPara reclamarlo, habla con algunn administrador.`)
             } else {
                 await interaction.editReply('Vaya... Parece que no has ganado nada... Suerte para la proxima vez!')
